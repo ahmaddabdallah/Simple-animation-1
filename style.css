@@ -1,0 +1,58 @@
+body{
+    background-color: #222;
+}
+
+.animation{
+    margin-top: 50px;
+    width: 120px;
+    height: 100px;
+    background-color: red;
+    animation-name: square;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+    border-radius: 40%;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes square{
+    0%{
+        translate: 0 0;
+        background: aqua;
+        rotate: 0;
+    }
+    25%{
+        translate: 0 300px;
+        background: yellow;
+        rotate: 90deg;
+    }
+    50%{
+        translate: 500px 300px ;
+        background:green;
+        rotate: 180deg;
+    }
+    75%{
+        translate: 500px 0;
+        background: blue;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        background: darkgrey;
+        rotate: 360deg;
+    }
+}
+
+.animation:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+hr{
+    margin: 550px 0 0 0;
+    border: 1px;
+    height: 2px;
+    background-image: linear-gradient(to right, #36751400, #bba6a6bf, #3fcf2600);
+}
